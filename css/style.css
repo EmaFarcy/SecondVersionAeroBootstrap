@@ -11,7 +11,16 @@
 	overflow: hidden;
 }
 
-/*Barra nav*/
+hr {
+	color: white;
+}
+
+.fake-line{
+		height: 1px;
+		background-color: white;
+}
+
+/*NavBar*/
 .nav1{
 	display: flex;
 	justify-content: space-between;
@@ -113,12 +122,42 @@
 }
 
 /*About Us*/
+
+.d-block {
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: non-repeat;
+    background-size: cover;
+    object-fit: cover;
+    
+}
+
 .textAboutUs{
 	display: flex;
 	color: #fff;
 	display: inline-block;
 	margin: 40px;
 }
+
+.titleText{
+	color: #fff;
+	text-align: center;
+	align-items: center;
+
+}
+
+.mainAboutUs{
+	align-items: center;
+	text-align: center;
+}
+
+#number{
+	font-size: 50px;
+	font-weight: bold
+}
+
 
 /*Contact*/
 
@@ -222,6 +261,15 @@
 }
 
 /*Bikes*/
+#contentMain{
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	margin: 10px;
+
+}
+
+
 #logo_aero{
 	width: 70px;
 
@@ -266,27 +314,14 @@
 	color: #fff;
 }
 
-.video{
-	display:flex;
-	margin-top: 40px;
-	justify-content: center;
-	align-items: center;
-	padding: 20px;
-	width: 100%;
-}
 
-.video iframe{
-	display:flex;
-	width: 50%;
-	margin-right: 50px;
-	border-style: solid;
-}
 
 /*Accesories*/
 .cont{
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	background-color: #000;
 }
 
 .titleAccesories{
@@ -301,11 +336,12 @@
 .main{
 	background-color: #000;
 	background-image: linear-gradient(to right, rgb(25.899, 33.481, 37.851), #000);
-	flex-basis: 300px;
+	flex-basis: 400px;
 	align-items: center;
 	text-align: center;
 	flex-grow: 1;
 	flex-shrink: 0;
+	overflow: hidden;
 }
 
 #imgTitleAside{
@@ -344,6 +380,7 @@
 	align-items: center;
 	text-align: center;
 
+
 }
 
 .imageAside{
@@ -369,8 +406,7 @@
 
 }
 
-
-@media screen and (min-width: 800px){
+@media screen and (min-width: 650px){
 	.bike_container {
 		grid-row: 2/6;
 	}
@@ -378,7 +414,9 @@
 		display: grid;
 		grid-template-rows: 80px 1fr 1fr 1fr 1fr 80px; /*Las fr son filas*/
 		grid-template-columns: repeat(3, 1fr);
+		margin-bottom: auto;
 	}
+
 
 	.main{
 		grid-row: 1/7;
