@@ -348,6 +348,7 @@ hr {
 #imgTitleAside{
 	width: 100%;
 	padding: 20px;
+	order-radius: 10px;
 
 }
 
@@ -388,7 +389,7 @@ hr {
 	align-items: center;
 	text-align: center;
 	width: 35%;
-	border-radius: 4px;
+	border-radius:4px;
 }
 
 	#asideTitle{
