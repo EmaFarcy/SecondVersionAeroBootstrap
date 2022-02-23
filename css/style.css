@@ -131,6 +131,7 @@ hr {
     background-repeat: non-repeat;
     background-size: cover;
     object-fit: cover;
+    border-radius: 10px;
     
 }
 
